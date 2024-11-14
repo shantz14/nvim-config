@@ -8,3 +8,6 @@ vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>zz', { noremap = true, silent = true
 vim.api.nvim_set_keymap('n', '<C-u>', '<C-u>zz', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'n', 'nzzzv', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'N', 'Nzzzv', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('n', '<leader>o', 'm`o<Esc>``', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>O', 'm`O<Esc>``', { noremap = true, silent = true })
