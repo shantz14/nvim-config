@@ -42,6 +42,16 @@ return require('packer').startup(function(use)
         end
     })]]--
 
+    use({
+        "kylechui/nvim-surround",
+        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+        config = function()
+            require("nvim-surround").setup({
+                -- Configuration here, or leave empty to use defaults
+            })
+        end
+    })
+
     use {
         "windwp/nvim-autopairs",
         event = "InsertEnter",
@@ -49,6 +59,15 @@ return require('packer').startup(function(use)
             require("nvim-autopairs").setup {}
         end
     }
+
+    use {"shortcuts/no-neck-pain.nvim", tag = "*" }
+    require("no-neck-pain").setup({
+        buffers = {
+            wo = {
+                fillchars = "eob: ",
+            },
+        },
+    })
 
     use {
         "windwp/nvim-ts-autotag",
@@ -72,6 +91,8 @@ return require('packer').startup(function(use)
     use ('saadparwaiz1/cmp_luasnip')
     use ('L3MON4D3/LuaSnip')
     use ('rafamadriz/friendly-snippets')
+
+    use ('andweeb/presence.nvim')
 
 end)
 -- Gaming gametime

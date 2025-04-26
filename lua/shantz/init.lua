@@ -1,3 +1,4 @@
+require("shantz.packer")
 require("shantz.remap")
 require("shantz.set")
 
