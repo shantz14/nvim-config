@@ -60,15 +60,6 @@ return require('packer').startup(function(use)
         end
     }
 
-    use {"shortcuts/no-neck-pain.nvim", tag = "*" }
-    require("no-neck-pain").setup({
-        buffers = {
-            wo = {
-                fillchars = "eob: ",
-            },
-        },
-    })
-
     use {
         "windwp/nvim-ts-autotag",
         event = "InsertEnter",
