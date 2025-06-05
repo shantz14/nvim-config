@@ -52,6 +52,15 @@ return require('packer').startup(function(use)
         end
     })
 
+    require("packer").startup(function()
+        use({
+            "stevearc/oil.nvim",
+            config = function()
+                require("oil").setup()
+            end,
+        })
+    end)
+
     use {
         "windwp/nvim-autopairs",
         event = "InsertEnter",
