@@ -1,0 +1,110 @@
+# Common recent settings file for Wireshark 4.4.3.
+#
+# This file is regenerated each time Wireshark is quit
+# and when changing configuration profile.
+# So be careful, if you want to make manual changes here.
+
+######## Recent capture files (latest last), cannot be altered through command line ########
+
+recent.capture_file: /Users/isaacschwarz/Documents/first.pcapng
+recent.capture_file: /Users/isaacschwarz/Documents/Wireshark/thirdtry.pcap
+recent.capture_file: /Users/isaacschwarz/Documents/Wireshark/cs460_wireshark_1-ping.pcap
+recent.capture_file: /Users/isaacschwarz/Documents/Wireshark/first.pcapng
+recent.capture_file: /Users/isaacschwarz/Dev/Uni/CS460/hw1/demo.pcap
+recent.capture_file: /Users/isaacschwarz/Dev/Uni/CS460/chat/demo.pcap
+
+######## Recent capture filters (latest first), cannot be altered through command line ########
+
+
+######## Recent display filters (latest last), cannot be altered through command line ########
+
+recent.display_filter: tcp.port == 8181
+recent.display_filter: dhcp
+recent.display_filter: tcp
+recent.display_filter: iperf3
+recent.display_filter: udp
+recent.display_filter: icmp
+recent.display_filter: echo
+recent.display_filter: quic
+recent.display_filter: http
+
+# Main window geometry.
+# Decimal numbers.
+gui.geometry_main_x: 0
+gui.geometry_main_y: 26
+gui.geometry_main_width: 1920
+gui.geometry_main_height: 1027
+
+# Main window maximized.
+# true or false (case-insensitive).
+gui.geometry_main_maximized: true
+
+# Main window geometry state.
+# Hex byte string.
+gui.geometry_main: 01d9d0cb00030000000000000000001a0000077f00000438000000b1000000670000066e000003e10000000002000000078000000000000000360000077f00000438
+
+# Leftalign Action Buttons.
+# true or false (case-insensitive).
+gui.geometry_leftalign_actions: false
+
+# Last used Configuration Profile.
+gui.last_used_profile: Default
+
+# Number of packets or events to check for automatic profile switching.
+# Decimal number. Zero disables switching.
+#gui.profile_switch_check_count: 1000
+
+# Warn if running with elevated permissions (e.g. as root).
+# true or false (case-insensitive).
+privs.warn_if_elevated: true
+
+# Warn if Wireshark is unable to capture.
+# true or false (case-insensitive).
+sys.warn_if_no_capture: true
+
+# Find packet search in.
+# One of: PACKET_LIST, PACKET_DETAILS, PACKET_BYTES
+gui.search_in: PACKET_LIST
+
+# Find packet character set.
+# One of: NARROW_AND_WIDE, NARROW, WIDE
+gui.search_char_set: NARROW_AND_WIDE
+
+# Find packet case sensitive search.
+# true or false (case-insensitive).
+gui.search_case_sensitive: false
+
+# Find packet search reverse direction.
+# true or false (case-insensitive).
+gui.search_reverse_dir: false
+
+# Find packet search multiple occurrences.
+# true or false (case-insensitive).
+gui.search_multiple_occurs: false
+
+# Find packet search type.
+# One of: DISPLAY_FILTER, HEX_VALUE, STRING, REGEX
+gui.search_type: DISPLAY_FILTER
+
+# Geometry and maximized state of PacketDialog window.
+# Decimal integers.
+gui.geom.PacketDialog.x: 283
+gui.geom.PacketDialog.y: 226
+gui.geom.PacketDialog.width: 1048
+gui.geom.PacketDialog.height: 600
+# true or false (case-insensitive).
+gui.geom.PacketDialog.maximized: false
+# Qt Geometry State (hex byte string).
+gui.geom.PacketDialog.qt_geometry: 01d9d0cb000300000000011b000000e200000532000003550000011b000000fe0000053200000355000000000000000005be0000011b000000fe0000053200000355
+
+# Custom colors.
+# List of custom colors selected in Qt color picker.
+gui.custom_colors: 
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff",
+	"ffffffff", "ffffffff"

@@ -11,13 +11,6 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    ---use ({
-        ---'rose-pine/neovim',
-        ---as = 'rose-pine',
-        ---config = function()
-            ---vim.cmd('colorscheme rose-pine')
-        ---end
-    ---})
 
     use ({
         "folke/tokyonight.nvim",
@@ -25,23 +18,19 @@ return require('packer').startup(function(use)
         priority = 1000,
         opts = {},
     })
-
-    --[[use ({
-        "rebelot/kanagawa.nvim",
-        as = 'kanagawa',
+    use {
+        'preservim/vim-pencil',
+        ft = { 'markdown', 'text', 'tex' },
         config = function()
-            vim.cmd('colorscheme kanagawa')
+            -- correct autocmd placed outside of the packer config function
+            vim.api.nvim_create_autocmd("FileType", {
+                pattern = { "markdown", "text", "tex" },
+                callback = function()
+                    vim.cmd("PencilSoft")
+                end,
+            })
         end
-    })]]--
-
-    --[[use ({
-        "ellisonleao/gruvbox.nvim",
-        as = 'gruvbox',
-        config = function()
-            vim.cmd('colorscheme gruvbox')
-        end
-    })]]--
-
+    }
     use({
         "kylechui/nvim-surround",
         tag = "*", -- Use for stability; omit to use `main` branch for the latest features
@@ -52,14 +41,12 @@ return require('packer').startup(function(use)
         end
     })
 
-    require("packer").startup(function()
-        use({
-            "stevearc/oil.nvim",
-            config = function()
-                require("oil").setup()
-            end,
-        })
-    end)
+    use({
+        "stevearc/oil.nvim",
+        config = function()
+            require("oil").setup()
+        end,
+    })
 
     use {
         "windwp/nvim-autopairs",
@@ -95,9 +82,3 @@ return require('packer').startup(function(use)
     use ('andweeb/presence.nvim')
 
 end)
--- Gaming gametime
--- I love to game it is so cool
--- Um hello um hello lets get this fricking bread gamers hehehehehehhehehe
--- OK so now its time to set up a color scheme cuz this aint cutting it pal
--- the real question is whether or not to have the line in insert mode or not
--- it is pretty pog so idk gamer lets get this bread tho am i right

@@ -39,9 +39,9 @@ require('mason-lspconfig').setup({
               globals = {'vim'},
             },
             workspace = {
-              library = {
-                vim.env.VIMRUNTIME,
-              }
+                library = {
+                    vim.env.VIMRUNTIME,
+                }
             }
           }
         }
